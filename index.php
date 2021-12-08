@@ -13,10 +13,10 @@
 
 <body>
     <!-- Criando Div para botão de login -->
-  
+
     <div class="container text-center">
         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">
-            Launch demo modal
+            Acessar o Portal
         </button>
     </div>
 
@@ -25,16 +25,27 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Sistema de Login </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <!-- Formulario de Login com Usuário e senha -->
+                    <form id ="login-form">
+                        <div class="mb-3">
+                            <label for="usuario" class="col-form-label">Usuário:</label>
+                            <input type="text" name="usuario" placeholder="Digite o seu Email  📧" class="form-control" id="usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="col-form-label">Senha</label>
+                            <input type="password" name="senha" placeholder="Digite a sua Senha" class="form-control" id="senha">
+                        </div>
+                        <!-- Botão para iniciar o Login do Formulario -->
+                        <div class="mb-3">
+                            <input type="submit" class="btn btn-outline-danger bt-sm" id="btnlogin" value="Acessar">
+                        </div>
+                    </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+
             </div>
         </div>
     </div>
