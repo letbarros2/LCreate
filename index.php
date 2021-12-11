@@ -1,3 +1,9 @@
+<?php
+// echo password_hash("123456", PASSWORD_DEFAULT);
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,9 +16,12 @@
 
 <body>
     <div class="container text-center">
+        <div id="dados_usuarios">
         <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
             Acessar
         </button>
+        </div>
+        
     </div>
 
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
