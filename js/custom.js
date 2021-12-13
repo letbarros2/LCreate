@@ -21,7 +21,7 @@ loginForm.addEventListener("submit", async (e) => {
         if(resposta['erro']){
             msgAlertErroLogin.innerHTML = resposta['msg']
         }else{
-            document.getElementById("dados_usuarios").innerHTML = "Bem vindo " + resposta['dados'].nome + "<br><a href='sair.php'>Sair</a><br>";
+            document.getElementById("dados-usuarios").innerHTML = "Bem vindo " + resposta['dados'].nome + "<br><a href='sair.php'>Sair</a><br>";
             loginForm.reset();
             loginModal.hide();
 
