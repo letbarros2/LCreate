@@ -15,14 +15,24 @@
 </head>
 
 <body>
-    <div class="container text-center">
-        <div id="dados_usuarios">
-        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-            Acessar
-        </button>
-        </div>
-        
-    </div>
+     <?php
+
+        if(isset($_SESSION['id']) and (isset($_SESSION['nome']))){
+
+        echo "Bem vindo " . $_SESSION['nome'] . "<br>";
+
+        echo "<a href='sair.php'>Sair</a><br>";
+
+        }else{
+
+            echo "<div class='container '>";
+            echo "<div id='dados-usuarios'>";
+            echo "<button type='button' class='btn btn-outline-primary' data-bs-toggle='modal' data-bs-target='#loginModal'>Acessar</button>";
+            echo "</div>";
+   
+
+        }
+?>
 
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
